@@ -3,7 +3,6 @@ const github = require('@actions/github');
 const { exec } = require("child_process");
 
 try {
-    // `who-to-greet` input defined in action metadata file
     const host = core.getInput('host');
     const user = core.getInput('user');
     const pass = core.getInput('pass');
@@ -19,9 +18,6 @@ try {
         }
         console.log(`stdout: ${stdout}`);
     });
-    // Get the JSON webhook payload for the event that triggered the workflow
-    //const payload = JSON.stringify(github.context.payload, undefined, 2)
-    //console.log(`The event payload: ${payload}`);
 } catch (error) {
   core.setFailed(error.message);
 }
