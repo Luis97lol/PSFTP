@@ -25,21 +25,21 @@ I recomend add to the PATH variable to have globally access in the command-line.
 
 ## Inputs
 
-## `host`
+### `host`
 
 **Required**. The hostname of the SFTP server.
 
-## `user`
+### `user`
 
 **Required**. The session username to login.
 
-## `pass`
+### `pass`
 
 **Required**. The session password to login.
 
-## `scriptPath`
+### `scriptPath`
 
-**Required**. The absolute or remote path to the script file that contains the psftp commands to be executed.
+**Required**. The relative or absolute path to the script file that contains the psftp commands to be executed.
 
 ## Example usage
 
