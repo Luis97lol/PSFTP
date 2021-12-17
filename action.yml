@@ -1,0 +1,18 @@
+name: 'psftp-action'
+description: 'Greet someone and record the time'
+inputs:
+  host:  # id of input
+    description: 'Remote SFTP Host'
+    required: true
+  user:  # id of input
+    description: 'Session Username'
+    required: true
+  pass:  # id of input
+    description: 'Session Password'
+    required: true
+  scriptPath:  # id of input
+    description: 'Path to the file that contains the psftp commands to be executed'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
