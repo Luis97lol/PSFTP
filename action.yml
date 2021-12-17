@@ -1,7 +1,8 @@
 name: 'psftp-action'
 description: 'Exposes SFTP commands to be run. Very useful to automate SFTP deployments to any SFTP server.'
-icon: 'upload-cloud'
-color: 'blue'
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
 inputs:
   host:  # id of input
     description: 'Remote SFTP Host'
