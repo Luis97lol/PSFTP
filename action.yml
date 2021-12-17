@@ -1,5 +1,5 @@
 name: 'psftp-action'
-description: 'This action exposes the psftp command-line options to be executed from external file script. Very useful to automate SFTP deployments to any SFTP server.'
+description: 'Exposes SFTP commands to be run. Very useful to automate SFTP deployments to any SFTP server.'
 icon: 'upload-cloud'
 color: 'blue'
 inputs:
