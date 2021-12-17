@@ -1,5 +1,7 @@
 name: 'psftp-action'
-description: 'Greet someone and record the time'
+description: 'This action exposes the psftp command-line options to be executed from external file script. Very useful to automate SFTP deployments to any SFTP server.'
+icon: 'upload-cloud'
+color: 'blue'
 inputs:
   host:  # id of input
     description: 'Remote SFTP Host'
