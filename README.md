@@ -1,4 +1,4 @@
-# PSFTP
+# P-SFTP
 
 This action exposes the psftp command-line options to be executed from external file script. Very useful to automate SFTP deployments to any SFTP server.
 
@@ -18,24 +18,24 @@ More information at https://www.puttygen.com/download-putty
 
 https://www.puttygen.com/download-putty
 
-<mark>NO INSTALLATION NEEDED<mark>
+NO INSTALLATION NEEDED.
 
-I recomend add to the PATH variable to have globally access in the command-line.
+It would be recommended to add the containing folder to the PATH variable to have globally access in the command-line.
 
 
 ## Inputs
 
 ### `host`
 
-**Required**. The hostname of the SFTP server.
+**Required**. The hostname of the SFTP server.RECOMMENDED TO USE AN ENVIRONMENT VARIABLE
 
 ### `user`
 
-**Required**. The session username to login.
+**Required**. The session username to login. RECOMMENDED TO USE AN ENVIRONMENT VARIABLE
 
 ### `pass`
 
-**Required**. The session password to login.
+**Required**. The session password to login. RECOMMENDED TO USE AN ENVIRONMENT VARIABLE
 
 ### `scriptPath`
 
@@ -44,7 +44,7 @@ I recomend add to the PATH variable to have globally access in the command-line.
 ## Example usage
 
 ```yml
-uses: Luis97lol/psftp-action@v1.2
+uses: Luis97lol/P-SFTP@v1.2
 with:
   host: 'hostname'
   user: 'username'
@@ -54,6 +54,7 @@ with:
 ## Example Deploy Script Content (deploy.sh)
 
 ```bash
+# Put in this file every SFTP actions you want to do. For example:
 # Uploads the dist folder and rename it on the server
 put -r dist coolAppName
 ```
