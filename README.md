@@ -44,7 +44,7 @@ It would be recommended to add the containing folder to the PATH variable to hav
 ## Example usage
 
 ```yml
-uses: Luis97lol/P-SFTP@v1.2
+uses: Luis97lol/P-SFTP@v1.3
 with:
   host: 'hostname'
   user: 'username'
