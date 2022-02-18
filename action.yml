@@ -1,4 +1,4 @@
-name: 'psftp-action'
+name: 'PSFTP'
 description: 'Exposes SFTP commands to be run. Very useful to automate SFTP deployments to any SFTP server.'
 branding:
   icon: 'upload-cloud'
