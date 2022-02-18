@@ -49,4 +49,11 @@ with:
   host: 'hostname'
   user: 'username'
   pass: 'password'
+  scriptPath: deploy.sh
+```
+## Example Deploy Script Content (deploy.sh)
+
+```bash
+# Uploads the dist folder and rename it on the server
+put -r dist coolAppName
 ```
