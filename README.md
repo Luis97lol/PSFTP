@@ -1,4 +1,4 @@
-# psftp-action
+# PSFTP
 
 This action exposes the psftp command-line options to be executed from external file script. Very useful to automate SFTP deployments to any SFTP server.
 
@@ -44,7 +44,7 @@ I recomend add to the PATH variable to have globally access in the command-line.
 ## Example usage
 
 ```yml
-uses: Luis97lol/psftp-action@v1.1
+uses: Luis97lol/psftp-action@v1.2
 with:
   host: 'hostname'
   user: 'username'
