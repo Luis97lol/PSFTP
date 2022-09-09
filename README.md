@@ -44,11 +44,12 @@ It would be recommended to add the containing folder to the PATH variable to hav
 ## Example usage
 
 ```yml
-uses: Luis97lol/P-SFTP@v1.3
+uses: Luis97lol/PSFTP@v1.4
 with:
-  host: 'hostname'
-  user: 'username'
-  pass: 'password'
+  host: ${{ secrets.SFTP_HOST }}
+  user: ${{ secrets.SFTP_USER }}
+  pass: ${{ secrets.SFTP_PASS }}
+  hostkey: ${{ secrets.SFTP_HOSTKEY }}  # Optional
   scriptPath: deploy.sh
 ```
 ## Example Deploy Script Content (deploy.sh)
