@@ -37,6 +37,10 @@ It would be recommended to add the containing folder to the PATH variable to hav
 
 **Required**. The session password to login. RECOMMENDED TO USE AN ENVIRONMENT VARIABLE
 
+### `hostkey`
+
+**Optional**. The host verification key. Only needed if not cached on running machine. RECOMMENDED TO USE AN ENVIRONMENT VARIABLE
+
 ### `scriptPath`
 
 **Required**. The relative or absolute path to the script file that contains the psftp commands to be executed.
