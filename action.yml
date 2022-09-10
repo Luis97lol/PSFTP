@@ -13,6 +13,9 @@ inputs:
   pass:  # id of input
     description: 'Session Password'
     required: true
+  hostkey:  # id of input
+    description: 'Optional hostkey if not cached'
+    required: false
   scriptPath:  # id of input
     description: 'Path to the file that contains the psftp commands to be executed'
     required: true
