@@ -3,10 +3,10 @@ const github = require('@actions/github');
 const { exec } = require("child_process");
 
 try {
-    const host = core.getInput('host', { required: true });
-    const user = core.getInput('user', { required: true });
-    const pass = core.getInput('pass', { required: true });
-    const scriptPath = core.getInput('scriptPath', { required: true });
+    const host = core.getInput('host');
+    const user = core.getInput('user');
+    const pass = core.getInput('pass');
+    const scriptPath = core.getInput('scriptPath');
     const hk = core.getInput('hostkey');
     let cmd = `psftp "${host}" -batch -bc -l "${user}" -pw "${pass}" -b ${scriptPath}`
     if (hk) cmd += ` -hostkey ${hk}`
@@ -18,7 +18,6 @@ try {
         }
         if (stderr) {
             console.log(`stderr: ${stderr}`);
-            core.setFailed(stderr);
             return;
         }
         console.log(`stdout: ${stdout}`);
